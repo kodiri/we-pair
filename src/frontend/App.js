@@ -6,6 +6,12 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <body>
+        {/* <Search search='language'/>
+        <Search search='location'/>
+        <button></button>
+        <Calendar /> */}
+      </body>
     </div>
   );
 }

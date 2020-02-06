@@ -1,3 +1,43 @@
 .App {
   text-align: center;
 }
+
+.Header {
+  height: 30vh;
+  background: #1E1E1E;
+  padding: auto 20%;
+}
+.signing {
+  color: #ffffff;
+  text-align: right;
+  padding: 10px;
+}
+
+
+
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+.Header label{
+  color: #539BD8;
+  font-size: 50px;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+.Header label span{
+  color: #9ADCFF;
+}
+
+.userIcon {
+  display: none;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .Header {
+    background-color: red;
+  }
+}
