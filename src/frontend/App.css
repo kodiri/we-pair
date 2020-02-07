@@ -1,43 +1,68 @@
 .App {
   text-align: center;
+  background: #1e1e1e;
+  width: 100vw;
+  height: 100vh;
 }
 
 .Header {
   height: 30vh;
-  background: #1E1E1E;
   padding: auto 20%;
 }
+
+.Header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .signing {
   color: #ffffff;
   text-align: right;
-  padding: 10px;
+  padding: 20px;
 }
 
-
-
-.logo {
-  width: 20%;
+.Header-top {
+  display: flex;
+}
+.logo-img {
   height: auto;
+  margin: 10px;
 }
 
-.Header label{
-  color: #539BD8;
-  font-size: 50px;
-  vertical-align: bottom;
-  margin-bottom: 0;
-}
-
-.Header label span{
-  color: #9ADCFF;
-}
-
-.userIcon {
+.user-icon {
   display: none;
   color: white;
 }
 
+.Header-bottom-sentence {
+  color: white;
+  text-align: center;
+}
+
+.Header-bottom-sentence2 {
+  color: white;
+  text-align: center;
+}
+
+.Search-input {
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.Search-btn
+
 @media (min-width: 600px) {
-  .Header {
-    background-color: red;
+  .signing {
+    font-size: 20px;
+    text-align: right;
+    padding: 30px;
   }
+
+  .Search-input {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
 }
