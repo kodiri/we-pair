@@ -21,6 +21,15 @@
   padding: 20px;
 }
 
+
+.sign-up, .log-in {
+  text-decoration: none;
+}
+
+.sign-up, .log-in:visited {
+  color: #ffffff;
+}
+
 .Header-top {
   display: flex;
 }

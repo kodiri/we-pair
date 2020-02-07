@@ -11,9 +11,14 @@ export default function Header() {
           <img className="logo-img" src={logo} alt="logo" />
         </div>
         <div className="signing">
-          <a className="sign-up">Sign Up </a>
+          <a className="sign-up" href="">
+            Sign Up{" "}
+          </a>
           <span> | </span>
-          <a className="log-in"> Log In</a>
+          <a className="log-in" href="">
+            {" "}
+            Log In
+          </a>
         </div>
         <img className="user-icon" src={user} alt="user" />
       </div>
