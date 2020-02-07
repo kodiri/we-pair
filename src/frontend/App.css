@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  background: #1e1e1e;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Header {
+  height: 30vh;
+  padding: auto 20%;
+}
+
+.Header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signing {
+  color: #ffffff;
+  text-align: right;
+  padding: 20px;
+}
+
+.Header-top {
+  display: flex;
+}
+.logo-img {
+  height: auto;
+  margin: 10px;
+}
+
+.user-icon {
+  display: none;
+  color: white;
+}
+
+.Header-bottom-sentence {
+  color: white;
+  text-align: center;
+}
+
+.Header-bottom-sentence2 {
+  color: white;
+  text-align: center;
+}
+
+.Search-input {
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .signing {
+    font-size: 20px;
+    text-align: right;
+    padding: 30px;
+  }
+  
+  .Search-input {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+}
