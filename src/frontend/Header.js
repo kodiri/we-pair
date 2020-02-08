@@ -6,11 +6,11 @@ import "./App.css";
 export default function Header() {
   return (
     <div className="Header">
-      <div className="Header-top">
+      <div className="navbar">
         <div className="logo">
           <img className="logo-img" src={logo} alt="logo" />
         </div>
-        <div className="signing">
+        <div className="navbar-div">
           <a className="sign-up" href="">
             Sign Up{" "}
           </a>

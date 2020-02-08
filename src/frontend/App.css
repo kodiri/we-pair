@@ -10,19 +10,18 @@
   padding: auto 20%;
 }
 
-.Header-top {
+.navbar {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
-.signing {
+.navbar-div {
   color: #ffffff;
   text-align: right;
-  padding: 20px;
 }
 
-
-.sign-up, .log-in {
+.sign-up, .log-in{
   text-decoration: none;
 }
 
@@ -30,12 +29,8 @@
   color: #ffffff;
 }
 
-.Header-top {
-  display: flex;
-}
 .logo-img {
   height: auto;
-  margin: 10px;
 }
 
 .user-icon {
@@ -54,12 +49,19 @@
 }
 
 .Search-input {
+  border: white;
   width: 80%;
   height: 30px;
   margin-top: 10px;
 }
 
-@media (min-width: 600px) {
+.searchbtn {
+  width: 80%;
+  background: white;
+  
+}
+
+/* @media (min-width: 600px) {
   .signing {
     font-size: 20px;
     text-align: right;
@@ -71,5 +73,4 @@
     height: 50px;
     margin-top: 10px;
   }
-
-}
+} */

@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <body>
+      <main>
         <Search search='language'/>
         <Search search='location'/>
-        <button className='searchbtn'>Search</button>
+        <button className='searchbtn' onClick=''>Search</button>
         <Calendar />
-      </body>
+      </main>
     </div>
   );
 }
