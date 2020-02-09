@@ -6,16 +6,20 @@ import people from './image/people.png'
 
 export default function Results() {
     return (
-        <div className="user-wrapper">
-            <div className="a user_profile">User Profile</div>
-            <img className="b profile-image" src={people} alt="people" />
-            <div className="c user-name">Florin</div>
-            <div className="d language">Programming language</div>
-            <div className="e user-language">JavaScript, ReactJS</div>
-            <div className="f location">Location</div>
-            <div className="g user-location">London / Cairo</div>
-            <textarea className="h" placeholder="   Please type your message here!"></textarea>
-            <button className="i">Send</button>
-        </div>
+        <table className='resultsTable'>
+            <tr>
+                <th>User</th>
+                <th>Programming Language</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>
+                <img className="user-image" src={people} alt="people" />
+                <div>dummy Name</div>
+                </td>
+                <td>dummy Language</td>
+                <td>dummy Location</td>
+            </tr>
+        </table>
     )
 }

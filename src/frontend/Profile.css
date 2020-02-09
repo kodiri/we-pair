@@ -1,0 +1,68 @@
+.profile-image {
+    height: 100px;
+    width: 100px;
+    padding: 30px 0;
+}
+
+.user-wrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "a ."
+    "b c"
+    "d e"
+    "f g"
+    "h h"
+    ". i";
+}
+
+.a {
+    grid-area: a;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+    font-size: 40px;
+}
+
+.d {
+    grid-area: d;
+    padding: 20px 0;
+    border-right: 1px solid white;;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+    padding: 20px 0;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+    padding: 20px 0;
+    width: 90%;
+    height: 100px;
+    /* box-shadow: 0px 2px 15px grey; */
+}
+
+.i {
+    grid-area: i;
+    margin-top: 20px;
+}
