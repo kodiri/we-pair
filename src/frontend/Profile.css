@@ -11,58 +11,58 @@
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-    "a ."
-    "b c"
-    "d e"
-    "f g"
-    "h h"
-    ". i";
+    "user_profile ."
+    "profile-image user-name"
+    "language user-language"
+    "location user-location"
+    "placeholder placeholder"
+    ". send-button";
 }
 
-.a {
-    grid-area: a;
+.user_profile {
+    grid-area: user_profile;
     padding: 20px 0;
     font-weight: bold;
     font-size: 20px;
 }
 
-.b {
-    grid-area: b;
+.profile-image {
+    grid-area: profile-image;
 }
 
-.c {
-    grid-area: c;
+.user-name {
+    grid-area: user-name;
     font-size: 40px;
 }
 
-.d {
-    grid-area: d;
+.language {
+    grid-area: language;
     padding: 20px 0;
     border-right: 1px solid white;;
 }
 
-.e {
-    grid-area: e;
+.user-language {
+    grid-area: user-language;
 }
 
-.f {
-    grid-area: f;
+.location {
+    grid-area: location;
     padding: 20px 0;
 }
 
-.g {
-    grid-area: g;
+.user-location {
+    grid-area: user-location;
 }
 
-.h {
-    grid-area: h;
+.placeholder {
+    grid-area: placeholder;
     padding: 20px 0;
     width: 90%;
     height: 100px;
     /* box-shadow: 0px 2px 15px grey; */
 }
 
-.i {
-    grid-area: i;
+.send-button {
+    grid-area: send-button;
     margin-top: 20px;
 }

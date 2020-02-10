@@ -1,5 +1,4 @@
 import React from 'react';
-import './Results.css';
 import people from './image/people.png'
 import './Profile.css'
 
@@ -8,15 +7,15 @@ import './Profile.css'
 export default function Profile() {
     return (
         <div className="user-wrapper">
-            <div className="a user_profile">User Profile</div>
-            <img className="b profile-image" src={people} alt="people" />
-            <div className="c user-name">Florin</div>
-            <div className="d language">Programming language</div>
-            <div className="e user-language">JavaScript, ReactJS</div>
-            <div className="f location">Location</div>
-            <div className="g user-location">London / Cairo</div>
-            <textarea className="h" placeholder="   Please type your message here!"></textarea>
-            <button className="i">Send</button>
+            <div className="user_profile">User Profile</div>
+            <img className="profile-image" src={people} alt="people" />
+            <div className="user-name">Florin</div>
+            <div className="language">Programming language</div>
+            <div className="user-language">JavaScript, ReactJS</div>
+            <div className="location">Location</div>
+            <div className="user-location">London / Cairo</div>
+            <textarea className="placeholder" placeholder="   Please type your message here!"></textarea>
+            <button className="send-button">Send</button>
         </div>
     )
 }
