@@ -2,9 +2,11 @@ import React from 'react';
 import Header from './Header';
 import Search from './components/SearchBar/SearchBar';
 import Calendar from './Calendar';
+import Results from './Results';
+import Profile from './Profile';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -16,5 +18,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
