@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Search from './Search';
+import Search from './components/SearchBar/SearchBar';
 import Calendar from './Calendar';
 import './App.css';
 
@@ -9,8 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <body>
-        <Search search='language'/>
-        <Search search='location'/>
+        <Search />
         <button className='searchbtn'>Search</button>
         <Calendar />
       </body>
