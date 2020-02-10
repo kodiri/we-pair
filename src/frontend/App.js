@@ -9,9 +9,8 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Search search='language'/>
-        <Search search='location'/>
-        <button className='searchbtn' onClick=''>Search</button>
+        <Search />
+        <button className='searchbtn'>Search</button>
         <Calendar />
       </main>
     </div>
