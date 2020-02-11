@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "./image/logo/WePair7.svg";
-import user from "./image/userIcon.svg";
-import "./App.css";
+import logo from "../../image/logo/WePair7.svg";
+import user from "../../image/userIcon.svg";
+import "./Header.css";
 
 export default function Header() {
   return (
@@ -11,14 +11,14 @@ export default function Header() {
           <img className="logo-img" src={logo} alt="logo" />
         </div>
         <div className="navbar-div">
-          <a className="sign-up" href="">
+          <span className="sign-up" >
             Sign Up{" "}
-          </a>
+          </span>
           <span> | </span>
-          <a className="log-in" href="">
+          <span className="log-in" href="">
             {" "}
             Log In
-          </a>
+          </span>
         </div>
         <img className="user-icon" src={user} alt="user" />
       </div>
