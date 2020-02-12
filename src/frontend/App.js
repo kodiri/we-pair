@@ -8,11 +8,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <body>
         <Search />
-        <button className='searchbtn'>Search</button>
         <Calendar />
-      </body>
     </div>
   );
 }
