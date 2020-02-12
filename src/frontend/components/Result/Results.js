@@ -3,8 +3,6 @@ import './Results.css';
 import SearchBar from '../SearchBar/SearchBar';
 import people from '../../image/people.png';
 
-
-
 export default function Results() {
     return (
         <div>

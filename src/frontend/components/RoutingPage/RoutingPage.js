@@ -6,7 +6,6 @@ import Results from '../Result/Results';
 // import Profile from '../Profile/Profile';
 import Header from "../Header/Header";
 
-
 export default function RoutingPage() {
   return (
     <div className="App">
@@ -16,6 +15,5 @@ export default function RoutingPage() {
         <button clascsName='searchbtn'>Search</button>
       </main>
     </div>
-    
   );
 }
