@@ -9,7 +9,7 @@ export default function Results() {
         <div>
             <Header />
             <SearchBar />
-            <table className='resultsTable'>
+            <table className="resultsTable">
                 <tr>
                     <th>User</th>
                     <th>Programming Language</th>

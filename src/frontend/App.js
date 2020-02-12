@@ -1,8 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Results from './components/Result/Results';
 import Profile from './components/Profile/Profile';
-import Header from './components/Header/Header';
 import RoutingPage from './components/RoutingPage/RoutingPage';
 import './App.css';
 
