@@ -1,11 +1,13 @@
 import React from 'react';
 import './Results.css';
 import SearchBar from '../SearchBar/SearchBar';
+import Header from '../Header/Header';
 import people from '../../image/people.png';
 
 export default function Results() {
     return (
         <div>
+            <Header />
             <SearchBar />
             <table className='resultsTable'>
                 <tr>

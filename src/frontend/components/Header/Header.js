@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../image/logo/WePair7.svg';
 import user from '../../image/userIcon.svg';
 import './Header.css';
@@ -8,7 +9,9 @@ export default function Header() {
     <div className="Header">
       <div className="navbar">
         <div className="logo">
-          <img className="logo-img" src={logo} alt="logo" />
+          <Link to="/">
+            <img className="logo-img" src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="navbar-div">
           <span className="sign-up" >
