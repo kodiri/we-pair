@@ -1,20 +1,20 @@
 import React from 'react';
-import Header from './Header';
-import Search from './components/SearchBar/SearchBar';
-import Calendar from './Calendar';
-import Results from './Results';
-import Profile from './Profile';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Results from './components/Result/Results';
+import Profile from './components/Profile/Profile';
+import RoutingPage from './components/RoutingPage/RoutingPage';
 import './App.css';
 
 export default function App() {
   return (
     <div className="App">
-      <Header />
-      <body>
-        <Search />
-        <button className='searchbtn'>Search</button>
-        <Calendar />
-      </body>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={RoutingPage} />
+        <Route exact path="/results" component={Results} /> 
+        <Route exact path="/profile" component={Profile} />
+      </Switch>
+    </Router>
     </div>
   );
 }
