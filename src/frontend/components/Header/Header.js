@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../image/logo/WePair7.svg";
-import user from "../../image/userIcon.svg";
-import "./Header.css";
+import user from '../../image/userIcon.svg';
+import './Header.css';
 
 export default function Header() {
   return (

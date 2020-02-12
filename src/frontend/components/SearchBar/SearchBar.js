@@ -1,6 +1,6 @@
-import React from "react";
-//import "../App.css";
-import "./SearchBar.css";
+import React from 'react';
+//import '../App.css';
+import './SearchBar.css';
 
 // Start array of user objects
 // const users = [

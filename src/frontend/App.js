@@ -7,12 +7,12 @@ import './App.css';
 
 export default function App() {
   return (
-    <div className='App'>
+    <div className="App">
     <Router>
       <Switch>
         <Route exact path="/" component={RoutingPage} />
         <Route exact path="/results" component={Results} /> 
-        <Route exact path='/profile' component={Profile} />
+        <Route exact path="/profile" component={Profile} />
       </Switch>
     </Router>
     </div>
