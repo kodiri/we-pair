@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Search from '../SearchBar/SearchBar';
 // import Calendar from '../Calendar/Calendar';
 import Results from '../Result/Results';
-// import Profile from '../Profile/Profile';
 import Header from '../Header/Header';
 
 export default function RoutingPage() {
@@ -12,7 +11,7 @@ export default function RoutingPage() {
       <Header />
       <main>
         <Search />
-        <Link to="/results">
+        <Link to='/results'>
           <button className="searchbtn">Search</button>
         </Link>
       </main>

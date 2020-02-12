@@ -10,7 +10,6 @@ export default function App() {
   return (
     <div className="App">
     <Router>
-      <Header/>
       <Switch>
         <Route exact path="/" component={RoutingPage} />
         <Route exact path="/results" component={Results} /> 
