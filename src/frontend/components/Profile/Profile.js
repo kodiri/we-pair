@@ -1,6 +1,7 @@
 import React from 'react';
 import people from '../../image/people.png'
 import './Profile.css'
+import Header from '../Header/Header'
 
 
 

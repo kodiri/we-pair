@@ -11,12 +11,12 @@
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-    "user_profile ."
-    "profile-image user-name"
-    "language user-language"
-    "location user-location"
-    "placeholder placeholder"
-    ". send-button";
+    ". user_profile ."
+    ". profile-image user-name"
+    ". language user-language"
+    ". location user-location"
+    ". placeholder placeholder"
+    ". . send-button";
 }
 
 .user_profile {
@@ -24,6 +24,7 @@
     padding: 20px 0;
     font-weight: bold;
     font-size: 20px;
+    border-bottom: 1px solid white;;
 }
 
 .profile-image {
@@ -38,7 +39,6 @@
 .language {
     grid-area: language;
     padding: 20px 0;
-    border-right: 1px solid white;;
 }
 
 .user-language {
@@ -66,3 +66,7 @@
     grid-area: send-button;
     margin-top: 20px;
 }
+
+/* .nonDisplayonProfile {
+    display: none;
+} */
