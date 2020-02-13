@@ -1,7 +1,4 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import Search from './components/SearchBar/SearchBar';
-import Calendar from './components/Calender';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Results from './components/Result/Results';
 import Profile from './components/Profile/Profile';
@@ -11,9 +8,6 @@ import './App.css';
 export default function App() {
   return (
     <div className="App">
-      <Header />
-      <Search />
-      <Calendar />
     <Router>
       <Switch>
         <Route exact path="/" component={RoutingPage} />
