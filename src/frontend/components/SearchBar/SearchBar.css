@@ -1,0 +1,11 @@
+.Search {
+    display: flex;
+    flex-flow: column;
+}
+
+.search-bar {
+    width: 80%;
+    height: 30px;
+    border: none;
+    margin: 5px auto;
+}

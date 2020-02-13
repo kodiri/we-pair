@@ -1,0 +1,15 @@
+.resultsTable td, .resultsTable th{
+    color: white;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.user-image {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+
+.resultsTable {
+    transform: translate(20%, 20%)
+}
