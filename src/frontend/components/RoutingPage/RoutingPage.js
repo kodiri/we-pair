@@ -11,9 +11,6 @@ export default function RoutingPage() {
       <Header />
       <main>
         <Search />
-        <Link to="/results">
-          <button className="searchbtn">Search</button>
-        </Link>
       </main>
     </div>
   );

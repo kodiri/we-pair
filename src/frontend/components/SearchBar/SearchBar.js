@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.css";
+import { Link } from 'react-router-dom';
 
 // Start array of user objects
 const users = [
@@ -76,7 +77,9 @@ export default class SearchBar extends React.Component {
         />
         <h3>{this.state.filteredUsers}</h3>
         {/* <h1>{this.state.searchValue}</h1> */}
-        <button onClick={() => this.activeList()}>Press me</button>
+        <Link to="/results">
+          <button onClick={() => this.activeList()}>Press me</button>
+        </Link>
       </div>
     );
   }
