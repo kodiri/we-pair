@@ -13,12 +13,12 @@ export default function Header() {
             <img className="logo-img" src={logo} alt="logo" />
           </Link>
         </div>
-        <div className="navbar-div">
+        <div className="navbar-div nonDisplayonProfile">
           <span className="sign-up" >
             Sign Up{" "}
           </span>
           <span> | </span>
-          <span className="log-in" href="">
+          <span className="log-in nonDisplayonProfile" href="">
             {" "}
             Log In
           </span>

@@ -7,7 +7,6 @@ import people from '../../image/people.png';
 export default function Results() {
     return (
         <div>
-            <Header />
             <SearchBar />
             <table className="resultsTable">
                 <tr>
