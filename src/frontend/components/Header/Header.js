@@ -14,14 +14,13 @@ export default function Header() {
           </Link>
         </div>
         <div className="join-container">
-          <span className="sign-up" >
+          <button className="sign-up" >
             Sign Up{" "}
-          </span>
-          <span> | </span>
-          <span className="log-in" href="">
+          </button>
+          <button className="log-in" href="">
             {" "}
             Log In
-          </span>
+          </button>
         </div>
         <img className="user-icon" src={user} alt="user" />
       </div>

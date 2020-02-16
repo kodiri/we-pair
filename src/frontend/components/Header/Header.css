@@ -17,6 +17,9 @@
   
   .sign-up, .log-in{
     text-decoration: none;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
   }
   
   .sign-up, .log-in:visited {
