@@ -10,13 +10,16 @@
     padding: 10px;
   }
   
-  .navbar-div {
+  .navbar-join {
     color: #ffffff;
     text-align: right;
   }
   
   .sign-up, .log-in{
     text-decoration: none;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
   }
   
   .sign-up, .log-in:visited {
@@ -55,7 +58,17 @@
     
   }
   
-  /* @media (min-width: 600px) {
+  @media (min-width: 600px) {
+
+    .navbar {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .logo-img {
+      height: 50px;
+    }
+
     .signing {
       font-size: 20px;
       text-align: right;
@@ -68,5 +81,5 @@
       margin-top: 10px;
     }
   
-  } */
+  }
   

@@ -8,7 +8,6 @@ import Header from '../Header/Header';
 export default function RoutingPage() {
   return (
     <div className="RoutingPage">
-      <Header />
       <main>
         <Search />
         <Link to="/results">
