@@ -8,12 +8,12 @@ export default function Header() {
   return (
     <div className="Header">
       <div className="navbar">
-        <div className="logo">
+        <div className="navbar-logo">
           <Link to="/">
             <img className="logo-img" src={logo} alt="logo" />
           </Link>
         </div>
-        <div className="join-container">
+        <div className="navbar-join">
           <button className="sign-up" >
             Sign Up{" "}
           </button>
