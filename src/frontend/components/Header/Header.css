@@ -62,6 +62,10 @@
       margin: 0 auto;
     }
 
+    .logo-img {
+      height: 50px;
+    }
+
     .signing {
       font-size: 20px;
       text-align: right;
