@@ -10,7 +10,7 @@
     padding: 10px;
   }
   
-  .navbar-div {
+  .join-container {
     color: #ffffff;
     text-align: right;
   }
@@ -55,7 +55,13 @@
     
   }
   
-  /* @media (min-width: 600px) {
+  @media (min-width: 600px) {
+
+    .navbar {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     .signing {
       font-size: 20px;
       text-align: right;
@@ -68,5 +74,5 @@
       margin-top: 10px;
     }
   
-  } */
+  }
   
