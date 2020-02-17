@@ -16,7 +16,7 @@
     "react-scripts": "3.3.1"
   },
   "scripts": {
-    "start": "npm-run-all -s npm run build npm run start-backend ",
+    "start": "npm-run-all -s npm run build start-backend ",
     "start-dev": "npm-run-all -p start-frontend start-backend",
     "start-frontend": "react-scripts start",
     "start-backend": "nodemon ./src/backend/app.js",
