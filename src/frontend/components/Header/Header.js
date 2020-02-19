@@ -8,20 +8,19 @@ export default function Header() {
   return (
     <div className="Header">
       <div className="navbar">
-        <div className="logo">
+        <div className="navbar-logo">
           <Link to="/">
             <img className="logo-img" src={logo} alt="logo" />
           </Link>
         </div>
-        <div className="navbar-div nonDisplayonProfile">
-          <span className="sign-up" >
+        <div className="navbar-join">
+          <button className="sign-up" >
             Sign Up{" "}
-          </span>
-          <span> | </span>
-          <span className="log-in nonDisplayonProfile" href="">
+          </button>
+          <button className="log-in" href="">
             {" "}
             Log In
-          </span>
+          </button>
         </div>
         <img className="user-icon" src={user} alt="user" />
       </div>
