@@ -1,8 +1,7 @@
 import React from "react";
 import "./SearchBar.css";
 import { Link } from "react-router-dom";
-import {SearchResults} from "../Result/Results"
-
+import { SearchResults } from "../Result/Results";
 
 const users = [
   {
@@ -56,15 +55,33 @@ export default class SearchBar extends React.Component {
 
   searchDatabase() {
     let filteredUsers = users
-      .filter(user => user.language
-        .toLowerCase()
-        .includes(this.state.languageSearchQuery.toLowerCase()))
-      .map(profile =>   <SearchResults key={profile.id} name={profile.name} language={profile.language} location={profile.location}/>);
+      .filter(user =>
+        user.language
+          .toLowerCase()
+          .includes(this.state.languageSearchQuery.toLowerCase())
+      )
+      .map(profile => (
+        <SearchResults
+          key={profile.id}
+          name={profile.name}
+          language={profile.language}
+          location={profile.location}
+        />
+      ));
     let filteredLocation = users
-      .filter(user => user.location
-        .toLowerCase()
-        .includes(this.state.locationSearchQuery.toLowerCase()))
-      .map(profile => <h2>{profile.name}</h2>);
+      .filter(user =>
+        user.location
+          .toLowerCase()
+          .includes(this.state.locationSearchQuery.toLowerCase())
+      )
+      .map(profile => (
+        <SearchResults
+          key={profile.id}
+          name={profile.name}
+          language={profile.language}
+          location={profile.location}
+        />
+      ));
     if (this.state.languageSearchQuery && this.state.locationSearchQuery) {
       this.setState({
         filteredUsers,
@@ -78,8 +95,7 @@ export default class SearchBar extends React.Component {
       this.setState({
         filteredLocation
       });
-    }
-    else {
+    } else {
       return "Please try again";
     }
   }
@@ -101,9 +117,21 @@ export default class SearchBar extends React.Component {
         />
         {/* <h1>{this.state.searchValue}</h1> */}
         <button onClick={() => this.searchDatabase()}>Search</button>
-        <Link to="/results"></Link>
-        <h3>{this.state.filteredUsers}</h3>
-        <h3>{this.state.filteredLocation}</h3>
+        {/* <Link to="/results"></Link> */}
+        <div>
+          <table className="resultsTable">
+            <tbody>
+              <tr>
+                <th>User</th>
+                <th>Programming Language</th>
+                <th>Location</th>
+              </tr>
+            </tbody>
+            {this.state.filteredUsers &&
+              this.state.filteredUsers.map(profile => profile)}
+          </table>
+        </div>
+        <div>{this.state.filteredLocation}</div>
       </div>
     );
   }

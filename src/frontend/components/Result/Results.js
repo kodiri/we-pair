@@ -8,33 +8,21 @@ export function Results() {
   return (
     <div>
       <SearchBar />
-      {/* <table className="resultsTable">
+       {/* <table className="resultsTable">
                 <tr>
                     <th>User</th>
                     <th>Programming Language</th>
                     <th>Location</th>
                 </tr>
-                <tr>
-                    <td>
-                    <img className="user-image" src={people} alt="people" />
-                    <div>dummy Name</div>
-                    </td>
-                    <td>dummy Language</td>
-                    <td>dummy Location</td>
-                </tr>
-            </table> */}
+               <SearchResults/>
+            </table>  */}
     </div>
   );
 }
 
 export function SearchResults(props) {
   return (
-    <table className="resultsTable">
-      <tr>
-        <th>User</th>
-        <th>Programming Language</th>
-        <th>Location</th>
-      </tr>
+    <tbody>
       <tr>
         <td>
           <img className="user-image" src={people} alt="people" />
@@ -43,6 +31,7 @@ export function SearchResults(props) {
         <td>{props.language}</td>
         <td>{props.location}</td>
       </tr>
-    </table>
+      </tbody>
+    // </table>
   );
 }
