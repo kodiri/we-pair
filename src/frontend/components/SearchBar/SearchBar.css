@@ -1,5 +1,5 @@
-.Search {
-    display: flex;
+.SearchBar {
+    /* display: flex; */
     flex-flow: column;
 }
 
@@ -8,4 +8,8 @@
     height: 30px;
     border: none;
     margin: 5px auto;
+}
+
+h2 {
+    color: white;
 }

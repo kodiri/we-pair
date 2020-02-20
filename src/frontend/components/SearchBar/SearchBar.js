@@ -1,85 +1,109 @@
 import React from "react";
 import "./SearchBar.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import {SearchResults} from "../Result/Results"
 
-// Start array of user objects
+
 const users = [
   {
     id: 1,
     name: "Anitha Dharneedharan ",
-    Language: "JavaScript",
-    Location: "Sutton"
+    language: "JavaScript",
+    location: "Sutton"
   },
   {
     id: 2,
     name: "Florin Dumitru",
-    Language: "Python",
-    Location: "Walthamstow"
+    language: "Python",
+    location: "Walthamstow"
   },
   {
     id: 3,
     name: "Kainy Ryu",
-    Language: "Java",
-    Location: "Bethnal Green"
+    language: "Java",
+    location: "Bethnal Green"
   },
   {
     id: 4,
     name: "Kamila Lew",
-    Language: "C++",
-    Location: "Heathrow"
+    language: "C++",
+    location: "Heathrow"
   },
   {
     id: 5,
     name: "Selchuk Karakus",
-    Language: "Ruby",
-    Location: "Leytonstone"
+    language: "Ruby",
+    location: "Leytonstone"
   },
   {
     id: 6,
     name: "Estaban Espanyol",
-    Language: "Java",
-    Location: "Wood Green"
-  },
-
+    language: "Java",
+    location: "Wood Green"
+  }
 ];
 
 export default class SearchBar extends React.Component {
   constructor() {
     super();
     this.state = {
-      searchValue: '',
-      filteredUsers: ''
+      languageSearchQuery: "",
+      locationSearchQuery: "",
+      filteredUsers: "",
+      filteredLocation: ""
     };
   }
 
-  // handleChange(userInput) {
-  //   this.setState({searchValue: userInput});
-  // }
-
-  activeList() {
-    this.setState({filteredUsers: users.filter(user => user.Language.includes(this.state.searchValue))
-    .map((profile) => <h2>{profile.name}</h2>)})
+  searchDatabase() {
+    let filteredUsers = users
+      .filter(user => user.language
+        .toLowerCase()
+        .includes(this.state.languageSearchQuery.toLowerCase()))
+      .map(profile =>   <SearchResults key={profile.id} name={profile.name} language={profile.language} location={profile.location}/>);
+    let filteredLocation = users
+      .filter(user => user.location
+        .toLowerCase()
+        .includes(this.state.locationSearchQuery.toLowerCase()))
+      .map(profile => <h2>{profile.name}</h2>);
+    if (this.state.languageSearchQuery && this.state.locationSearchQuery) {
+      this.setState({
+        filteredUsers,
+        filteredLocation
+      });
+    } else if (this.state.languageSearchQuery) {
+      this.setState({
+        filteredUsers
+      });
+    } else if (this.state.locationSearchQuery) {
+      this.setState({
+        filteredLocation
+      });
+    }
+    else {
+      return "Please try again";
+    }
   }
 
   render() {
     return (
-      <div className="Search">
+      <div className="SearchBar">
         <input
-          className="Search-language-input"
+          className="search-language-input"
           type="search"
           placeholder="search language"
-          onChange={(e) => this.setState({searchValue:(e.target.value)})}
+          onChange={e => this.setState({ languageSearchQuery: e.target.value })}
         />
         <input
-          className="Search-location-input"
+          className="search-location-input"
           type="search"
           placeholder="search location"
+          onChange={e => this.setState({ locationSearchQuery: e.target.value })}
         />
-        <h3>{this.state.filteredUsers}</h3>
         {/* <h1>{this.state.searchValue}</h1> */}
-        <Link to="/results">
-          <button onClick={() => this.activeList()}>Press me</button>
-        </Link>
+        <button onClick={() => this.searchDatabase()}>Search</button>
+        <Link to="/results"></Link>
+        <h3>{this.state.filteredUsers}</h3>
+        <h3>{this.state.filteredLocation}</h3>
       </div>
     );
   }
