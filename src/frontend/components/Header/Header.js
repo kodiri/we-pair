@@ -25,8 +25,6 @@ export default function Header() {
         <img className="user-icon" src={user} alt="user" />
       </div>
       <div className="Header-bottom">
-        <h2 className="Header-bottom-sentence">“Request for </h2>
-        <h2 className="Header-bottom-sentence">a Pair Programming”</h2>
       </div>
     </div>
   );

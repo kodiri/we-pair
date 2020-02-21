@@ -1,0 +1,17 @@
+
+@media (min-width: 600px) {
+
+    .search-background {
+        background: white;
+        box-sizing: border-box;
+        height: 70vh;
+        width: 60vw;
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+
+    .search-title {
+        margin-bottom: 50px;
+    }
+
+}
