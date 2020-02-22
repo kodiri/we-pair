@@ -115,9 +115,7 @@ export default class SearchBar extends React.Component {
           placeholder="search location"
           onChange={e => this.setState({ locationSearchQuery: e.target.value })}
         />
-        {/* <h1>{this.state.searchValue}</h1> */}
         <button onClick={() => this.searchDatabase()}>Search</button>
-        {/* <Link to="/results"></Link> */}
         <div>
           <table className="resultsTable">
             <tbody>
