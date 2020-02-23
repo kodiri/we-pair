@@ -1,6 +1,6 @@
 
 .Header {
-    height: 30vh;
+    height: 15vh;
     padding: auto 20%;
   }
   
@@ -33,16 +33,6 @@
   .user-icon {
     display: none;
     color: white;
-  }
-  
-  .Header-bottom-sentence {
-    color: white;
-    text-align: center;
-  }
-  
-  .Header-bottom-sentence2 {
-    color: white;
-    text-align: center;
   }
   
   .Search-input {
