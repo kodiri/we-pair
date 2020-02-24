@@ -31,7 +31,7 @@ export default class Profile extends React.Component {
                 {
                         <div className="user-wrapper">
                             <div className="user_profile">User Profile</div>
-                            <img className="profile-image" src={people} alt="people" />
+                            <img className="profile-image" src={this.state.userId.image} alt={this.state.userId.name} />
                             <div className="user-name">{this.state.userId.name}</div>
                             <div className="language">Programming language</div>
                             <div className="user-language">{this.state.userId.Language}</div>
