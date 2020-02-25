@@ -10,3 +10,9 @@
     margin: 5px auto;
 
 }
+.stack {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-start: 2;
+    width: 70%;
+}

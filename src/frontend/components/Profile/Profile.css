@@ -5,6 +5,7 @@
 }
 
 .user-wrapper {
+    background-color: salmon;
     color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
