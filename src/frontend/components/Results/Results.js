@@ -5,15 +5,8 @@ import SearchResults from "./SearchResults";
 // import Header from "../Header/Header";
 
 export default class Results extends React.Component {
-
-  constructor() {
-    super();
-    this.state = {filteredUsers: '' , filteredLocation: '' }
-  }
-
   render() {
     return (
-      <div>
       <div>
         <SearchBar
           searchData={(
@@ -22,26 +15,20 @@ export default class Results extends React.Component {
             languageSearchQuery,
             locationSearchQuery
           ) =>
-            this.searchData(
+            this.props.searchData(
               filteredUsers,
               filteredLocation,
               languageSearchQuery,
               locationSearchQuery
             )
           }
-          filteredUsers={this.state.filteredUsers}
-          filteredLocation={this.state.filteredLocation}
+          filteredUsers={this.props.filteredUsers}
+          filteredLocation={this.props.filteredLocation}
         />
-        {/* {this.state.filteredUsers && this.state.filteredLocation} */} 
-        
-       
+        {this.props.filteredUsers}
 
-      </div>
-      {
-      <SearchResults name="nam" location="loc" language="lang"/> }
-      
+        {/* <SearchResults name="nam" location="loc" language="lang"/>  */}
       </div>
     );
   }
-  
 }

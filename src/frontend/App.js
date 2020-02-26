@@ -41,8 +41,8 @@ export default class App extends React.Component {
         <Router>
         <Header />
           <Switch>
-            <Route exact path="/" render = {() => <Home searchData = {(a,b,c,d) => this.searchData(a,b,c,d)} />} />
-            <Route exact path="/results" component={Results} />
+            <Route exact path="/" render = {() => <Home searchData = {(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery ) => this.searchData(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery )} />} />
+            <Route exact path="/results" render = {() => <Results filteredUsers={this.state.filteredUsers} filteredLocation={this.state.filteredLocation} searchData = {(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery) => this.searchData(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery )} />} />
             {/* <Route exact path="/profile" component={Profile} /> */}
             <Route exact path="/profile/:id" component={Profile}></Route>
             

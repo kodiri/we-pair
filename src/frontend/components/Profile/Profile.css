@@ -5,7 +5,7 @@
 }
 
 .user-wrapper {
-    background-color: salmon;
+    background-color: gray;
     color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -71,3 +71,15 @@
 /* .nonDisplayonProfile {
     display: none;
 } */
+
+
+.parent {
+    display: grid;
+    
+    
+}
+
+.child {
+    text-align: center;
+    grid-template-rows: 1fr 1fr;    
+}
