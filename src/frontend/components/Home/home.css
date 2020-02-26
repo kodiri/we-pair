@@ -1,5 +1,5 @@
 
-@media (min-width: 600px) {
+
 
     .search-background {
         background: white;
@@ -14,4 +14,7 @@
         margin-bottom: 50px;
     }
 
-}
+    h2 {
+        font-size: 2.5em ;
+        
+    }

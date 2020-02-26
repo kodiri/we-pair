@@ -1,14 +1,19 @@
-.Search {
+.SearchBar {
     display: flex;
     flex-flow: column;
 }
 
 .search-bar {
-    width: 80%;
+    width: 70%;
     height: 30px;
     border: black 1px solid;
     margin: 5px auto;
+    
 
+}
+
+.search-button{
+    background-color: #529bd8;
 }
 /* .stack {
     display: grid;

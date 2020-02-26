@@ -11,20 +11,25 @@
   }
   
   .navbar-join {
+    display: flex;
     color: #ffffff;
     text-align: right;
+    width: 300px;
+    justify-content: space-evenly;
   }
+
+
   
-  .sign-up, .log-in{
+  .nav-button{
     text-decoration: none;
     background-color: #1e1e1e;
     color: white;
     border: none;
+    display: inline;
+    font-size: 1.1em;
   }
   
-  .sign-up, .log-in:visited {
-    color: #ffffff;
-  }
+ 
   
   .logo-img {
     height: auto;

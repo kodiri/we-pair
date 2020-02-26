@@ -18,8 +18,8 @@ export default class Home extends React.Component {
         <main>
           <div className="search-background">
             <div className="search-title">
-              <h2>“Request for </h2>
-              <h2>a Pair Programming”</h2>
+              <h2><em>"Ready for</em> </h2>
+              <h2><em>Pair Programming"</em></h2>
             </div>
 
             <SearchBar

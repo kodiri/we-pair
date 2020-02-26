@@ -61,40 +61,24 @@ export default class SearchBar extends React.Component {
       this.setState({showResults: true});
 
 
-    // if (this.state.languageSearchQuery && this.state.locationSearchQuery) {
-    //   this.setState({
-    //     filteredUsers,
-    //     filteredLocation
-    //   });
-    // } else if (this.state.languageSearchQuery) {
-    //   this.setState({
-    //     filteredUsers
-    //   });
-    // } else if (this.state.locationSearchQuery) {
-    //   this.setState({
-    //     filteredLocation
-    //   });
-    // } else {
-    //   return "Please try again";
-    // }
   }
 
   render() {
     return (
       <div className="SearchBar">
         <input
-          className="search-language-input"
+          className="search-bar"
           type="search"
           placeholder="search language"
           onChange={e => this.setState({ languageSearchQuery: e.target.value })}
         />
         <input
-          className="search-location-input"
+          className="search-bar"
           type="search"
           placeholder="search location"
           onChange={e => this.setState({ locationSearchQuery: e.target.value })}
         />
-        <button onClick={() => this.searchDatabase()}>Search</button>
+        <button  className="search-bar search-button"  onClick={() => this.searchDatabase()}>Search</button>
        {this.state.showResults && 
          <Redirect to = "/results" />
        }
