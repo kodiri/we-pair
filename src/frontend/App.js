@@ -6,6 +6,15 @@ import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import "./App.css";
 
+function NotFound() {
+  return(
+    <>
+      <p>
+      &#47;&#47;page not found
+      </p>
+    </>
+  ) 
+}
 export default class App extends React.Component {
   constructor() {
     super();
@@ -33,7 +42,7 @@ export default class App extends React.Component {
       });
     } else {
       this.setState({
-        message: `Sorry Please try again`
+        message: "No Result"
       });
     }
   }

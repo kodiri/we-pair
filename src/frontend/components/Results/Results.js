@@ -7,7 +7,7 @@ import SearchBar from "../SearchBar/SearchBar";
 export default class Results extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <SearchBar
           searchData={(
             filteredUsers,
@@ -31,7 +31,7 @@ export default class Results extends React.Component {
         {this.props.message}
 
         {/* <SearchResults name="nam" location="loc" language="lang"/>  */}
-      </div>
+      </>
     );
   }
 }

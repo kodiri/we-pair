@@ -1,6 +1,9 @@
+body {
+  background: #1e1e1e;
+}
+
 .App {
   text-align: center;
-  background: #1e1e1e;
   color: white;
   width: 100vw;
   height: 100vh;
@@ -12,4 +15,12 @@
 
 .value {
   color: #CF9176;
+}
+
+@media(min-width: 600px) {
+  .App{
+    width: 80%;
+    margin: 0;
+    padding-left: 0;
+  }
 }

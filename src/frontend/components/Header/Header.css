@@ -44,11 +44,6 @@
 /* Desktop */
 @media (min-width: 600px) {
 
-  .navbar {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .logo-img {
     height: 50px;
   }
