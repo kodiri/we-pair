@@ -6,3 +6,10 @@
   height: 100vh;
 }
 
+.key {
+  color: #9ADCFF
+}
+
+.value {
+  color: #CF9176;
+}
