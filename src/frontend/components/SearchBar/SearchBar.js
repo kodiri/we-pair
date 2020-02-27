@@ -71,16 +71,16 @@ export default class SearchBar extends React.Component {
         <input
           className="search-bar"
           type="search"
-          placeholder="search language"
+          placeholder="&gt; Language"
           onChange={e => this.setState({ languageSearchQuery: e.target.value })}
         />
         <input
           className="search-bar"
           type="search"
-          placeholder="search location"
+          placeholder="&gt; Location"
           onChange={e => this.setState({ locationSearchQuery: e.target.value })}
         />
-        <button  className="search-bar search-button"  onClick={() => this.searchDatabase()}>Search</button>
+        <button  className="search-button"  onClick={() => this.searchDatabase()}>Search</button>
        {this.state.showResults && 
          <Redirect to = "/results" />
        }

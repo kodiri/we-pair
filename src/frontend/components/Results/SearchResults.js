@@ -13,14 +13,10 @@ export default class SearchResults extends React.Component {
       <ul className="card">
         <li className="card-list stack">
           <Link to={`/profile/${this.props.id}`}>
-            {" "}
-            <div>
-              <img className="user-image" src={this.props.image} alt="people" />
-              <div>{this.props.name}</div>
-            </div>
+            <img className="user-image" src={this.props.image} alt="people" />
           </Link>
-
           <div className="stacked">
+          <h3>{this.props.name}</h3>
             Would like to get hands dirty on{" "}
             <strong>{this.props.language}</strong> at{" "}
             <strong>{this.props.location}</strong> on{" "}

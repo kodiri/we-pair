@@ -1,14 +1,7 @@
-.resultsTable td,
-.resultsTable th {
-  color: white;
-  border: 1px solid white;
-  padding: 20px;
-}
-
 .user-image {
-  height: 100px;
-  width: 100px;
-  padding: 20px;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
 }
 
 /* .resultsTable {
@@ -22,14 +15,12 @@
 
 .card {
   list-style: none;
+  padding: 0 10px;
 }
 
 .card-list {
-  border-radius: 3px;
-  width: 100%;
   min-height: 100px;
-  border-style: double;
-  background-color: gray;
+  border: solid 1px #404040;
 }
 
 .stack {
