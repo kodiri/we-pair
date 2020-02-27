@@ -9,7 +9,6 @@ export default class PickDates extends Component {
         value: new Date()
     }
 
-
     onChange = (value) => {
         debugger;
         this.setState({value});
@@ -17,9 +16,7 @@ export default class PickDates extends Component {
     }
 
     selectedDate = () => {
-       
         return `The selected date is ${this.props.value} ` ;
-        
     }
 
     render() {
@@ -32,9 +29,6 @@ export default class PickDates extends Component {
                 />
               <div>{users.map(user => user.availability[0])[0].toString()}</div>
             </div>
-    
         );
-
     }
-  
 }
