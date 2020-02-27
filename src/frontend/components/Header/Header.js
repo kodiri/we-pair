@@ -14,11 +14,11 @@ export default function Header() {
           </Link>
         </div>
         <div className="navbar-join">
-          <button className="sign-up" >
-            Sign Up{" "}
+          <button className="nav-button" >
+            Sign Up
           </button>
-          <button className="log-in" href="">
-            {" "}
+          <button className="nav-button" href="">
+          
             Log In
           </button>
         </div>
