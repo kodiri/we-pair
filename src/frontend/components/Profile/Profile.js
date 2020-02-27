@@ -1,6 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import users from "../getUsers.js";
+import PickDates from "../Calendar/PickDates";
 
 export default class Profile extends React.Component {
   constructor(props) {
@@ -21,26 +22,30 @@ export default class Profile extends React.Component {
   render() {
     return (
       <div>
-        {
-          <div className="user-wrapper">
-            <div className="user_profile">User Profile</div>
-            <img
-              className="profile-image"
-              src={this.state.userId.image}
-              alt={this.state.userId.name}
-            />
-            <div className="user-name">{this.state.userId.name}</div>
-            <div className="language">Programming language</div>
-            <div className="user-language">{this.state.userId.Language}</div>
-            <div className="location">Location</div>
-            <div className="user-location">{this.state.userId.Location}</div>
-            <textarea
-              className="placeholder"
-              placeholder="   Please type your message here!"
-            ></textarea>
-            <button className="send-button">Send</button>
+        <div className="user-wrapper">
+          <img
+            className="profile-image"
+            src={this.state.userId.image}
+            alt={this.state.userId.name}
+          />
+          <div className="user-list user-name">{this.state.userId.name}</div>
+
+          <div className="user-list">
+            Likes to pair program in {this.state.userId.language}
           </div>
-        }
+
+          <div className="user-list">
+            Location : {this.state.userId.location}
+          </div>
+
+          {/* <button className="send-button">Send</button> */}
+          <PickDates/>
+          
+          <a href="mailto:anitha.k.dharaneedharan@gmail.com?Subject=Hello">
+            Send email
+          </a>
+         
+        </div>
       </div>
     );
   }
