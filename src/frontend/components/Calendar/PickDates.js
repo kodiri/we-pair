@@ -8,7 +8,6 @@ export default class PickDates extends Component {
   };
 
   onChange = value => {
-    debugger;
     this.setState({ value });
   };
 
