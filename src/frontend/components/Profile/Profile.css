@@ -7,7 +7,7 @@
 .user-wrapper {
     background-color: gray;
     color: white;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
@@ -17,7 +17,7 @@
     ". language user-language"
     ". location user-location"
     ". placeholder placeholder"
-    ". . send-button";
+    ". . send-button"; */
 }
 
 .user_profile {
@@ -30,6 +30,7 @@
 
 .profile-image {
     grid-area: profile-image;
+
 }
 
 .user-name {
@@ -82,4 +83,8 @@
 .child {
     text-align: center;
     grid-template-rows: 1fr 1fr;    
+}
+
+.user-list{
+    margin-bottom: 10px;
 }

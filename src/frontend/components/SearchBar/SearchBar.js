@@ -32,6 +32,7 @@ export default class SearchBar extends React.Component {
         <SearchResults
           key={profile.id}
           id={profile.id}
+          image={profile.image}
           name={profile.name}
           language={profile.language}
           location={profile.location}
@@ -48,6 +49,7 @@ export default class SearchBar extends React.Component {
         <SearchResults
           key={profile.id}
           id={profile.id}
+          image={profile.image}
           name={profile.name}
           language={profile.language}
           location={profile.location}

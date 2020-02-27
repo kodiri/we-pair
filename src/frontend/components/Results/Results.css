@@ -29,6 +29,7 @@
   width: 100%;
   min-height: 100px;
   border-style: double;
+  background-color: gray;
 }
 
 .stack {
