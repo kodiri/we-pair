@@ -1,7 +1,7 @@
 import React from "react";
 import "./Results.css";
 import SearchBar from "../SearchBar/SearchBar";
-import SearchResults from "./SearchResults";
+//import SearchResults from "./SearchResults";
 // import Header from "../Header/Header";
 
 export default class Results extends React.Component {
@@ -13,19 +13,22 @@ export default class Results extends React.Component {
             filteredUsers,
             filteredLocation,
             languageSearchQuery,
-            locationSearchQuery
+            locationSearchQuery,
+            message
           ) =>
             this.props.searchData(
               filteredUsers,
               filteredLocation,
               languageSearchQuery,
-              locationSearchQuery
+              locationSearchQuery,
+              message
             )
           }
           filteredUsers={this.props.filteredUsers}
           filteredLocation={this.props.filteredLocation}
         />
         {this.props.filteredUsers}
+        {this.props.message}
 
         {/* <SearchResults name="nam" location="loc" language="lang"/>  */}
       </div>

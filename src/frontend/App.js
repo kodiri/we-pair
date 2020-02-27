@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
   constructor() {
     super();
-    this.state = {filteredUsers: '' , filteredLocation: '' }
+    this.state = {filteredUsers: '' , filteredLocation: '' , message: ''}
   }
 
   searchData(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery ) {
@@ -30,7 +30,9 @@ export default class App extends React.Component {
         filteredLocation
       });
     } else {
-      return "Please try again";
+      this.setState({
+        message: `Sorry Please try again`
+      });
     }
     
   }
@@ -42,7 +44,7 @@ export default class App extends React.Component {
         <Header />
           <Switch>
             <Route exact path="/" render = {() => <Home searchData = {(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery ) => this.searchData(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery )} />} />
-            <Route exact path="/results" render = {() => <Results filteredUsers={this.state.filteredUsers} filteredLocation={this.state.filteredLocation} searchData = {(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery) => this.searchData(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery )} />} />
+            <Route exact path="/results" render = {() => <Results message= {this.state.message} filteredUsers={this.state.filteredUsers} filteredLocation={this.state.filteredLocation} searchData = {(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery) => this.searchData(filteredUsers, filteredLocation,languageSearchQuery,locationSearchQuery )} />} />
             {/* <Route exact path="/profile" component={Profile} /> */}
             <Route exact path="/profile/:id" component={Profile}></Route>
             

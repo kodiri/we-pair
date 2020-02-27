@@ -39,10 +39,6 @@ export default class Home extends React.Component {
               filteredUsers={this.state.filteredUsers}
               filteredLocation={this.state.filteredLocation}
             />
-
-            {/* <Link to="/results">
-            <button className="searchbtn">Search</button>
-          </Link> */}
           </div>
         </main>
       </div>
