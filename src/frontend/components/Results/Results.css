@@ -4,15 +4,6 @@
   padding: 10px;
 }
 
-/* .resultsTable {
-  transform: translate(20%, 20%);
-  background-color: gra;
-} */
-
-/* .nonDisplayonProfile {
-    display: none;
-} */
-
 .card {
   list-style: none;
   padding: 0 10px;
@@ -27,10 +18,17 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   text-align: center;
-
 }
 
 .stacked {
-    text-align: center;
-    align-self: center;
+  text-align: center;
+  align-self: center;
+  color: #ffffff;
+  text-align: left;
+}
+
+.result-detail {
+  margin: 0;
+  font-size: 1.2em;
+  padding-left: 20px;
 }
