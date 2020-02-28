@@ -3,6 +3,8 @@ import kamila from '../image/kamila.jpg'
 import kainy from '../image/kainy.png'
 import florin from '../image/florin.jpg'
 import selchuck from '../image/selchuck.jpg'
+import Esteban from '../image/esteban.png'
+import Ricardo from '../image/ricardo.png'
 
 
 const users = [
@@ -62,10 +64,20 @@ const users = [
       language: "Java",
       location: "Wood Green",
       email: "",
-      image: kamila,
+      image: Esteban,
       availability: ["2014-04-11"]
       // availability: ["2014-04-29 14:00:00 UTC" , "2014-05-1 17:00:00 UTC","2014-06-21 20:30:00 UTC"]
-    }
+    },
+    {
+      id: '7',
+      name: "Ricardo",
+      language: "JavaScript, Python, Java",
+      location: "Leytonstone",
+      email: "selchuk.karakus@gmail.com",
+      image: Ricardo,
+      availability: ["2014-04-11"]
+      // availability:["2014-03-29 10:00:00 UTC" , "2014-04-21 13:00:00 UTC","2014-04-21 20:06:00 UTC"]
+    },
   ];
 
   export default users;
