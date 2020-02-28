@@ -19,10 +19,10 @@ export default class SearchResults extends React.Component {
             <div className="stacked">
               <p className="result-detail">
                 &#123;<br />
-                <span className="key">name: </span><span className="value">{this.props.name}</span><br />
-                <span className="key">language: </span><span className="value">{this.props.language}</span><br />
-                <span className="key">location: </span><span className="value">{this.props.location}</span><br />
-                <span className="key">availability: </span><span className="value">{this.props.availability}</span><br />
+                <span className="key">name: </span><span className="value">&#34;{this.props.name}&#34;</span>,<br />
+                <span className="key">language: </span><span className="value">&#34;{this.props.language}&#34;</span>,<br />
+                <span className="key">location: </span><span className="value">&#34;{this.props.location}&#34;</span>,<br />
+                <span className="key">availability: </span><span className="value">&#34;{this.props.availability}&#34;</span><br />
                 &#125;
               </p>
               {/* <Link to={`/profile/${this.props.id}`}> <span>See other availabale dates</span></Link> */}

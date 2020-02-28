@@ -29,7 +29,6 @@
 
 @media (min-width: 600px) {
     .search-bars{
-        padding-left: 10%;
         margin: 0;
         display: flex;
         flex-flow: column;

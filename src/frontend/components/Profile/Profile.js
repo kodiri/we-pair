@@ -30,10 +30,10 @@ export default class Profile extends React.Component {
           />
           <div className="profile-detail">
             <span>&#123;</span>
-            <div className="user-list user-name"><span className="key">name: </span> <span className="value">	&#34;{this.state.userId.name}	&#34;</span></div>
+            <div className="user-list user-name"><span className="key">name: </span> <span className="value">	&#34;{this.state.userId.name}	&#34;</span>,</div>
 
             <div className="user-list">
-            <span className="key">language: </span> <span className="value">	&#34;{this.state.userId.language}	&#34;</span>
+            <span className="key">language: </span> <span className="value">	&#34;{this.state.userId.language}	&#34;</span>,
             </div>
 
             <div className="user-list">
