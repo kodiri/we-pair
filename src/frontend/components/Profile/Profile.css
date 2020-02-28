@@ -22,6 +22,8 @@
 }
 
 .profile-detail {
+    flex: 1;
+    padding-left: 20px;
     width: 250px;
     text-align: left;
 }
