@@ -1,7 +1,36 @@
+body {
+  background: #1e1e1e;
+}
+
 .App {
   text-align: center;
-  background: #1e1e1e;
+  color: white;
   width: 100vw;
   height: 100vh;
 }
 
+.key {
+  color: #9ADCFF
+}
+
+.value {
+  color: #CF9176;
+}
+
+a {
+  text-decoration: none;
+}
+
+a :visited {
+  text-decoration: none;
+}
+
+@media(min-width: 600px) {
+  
+  .App{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+}

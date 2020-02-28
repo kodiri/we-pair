@@ -1,45 +1,38 @@
-.resultsTable td,
-.resultsTable th {
-  color: white;
-  border: 1px solid white;
-  padding: 20px;
-}
-
 .user-image {
-  height: 100px;
-  width: 100px;
-  padding: 20px;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
 }
 
-/* .resultsTable {
-  transform: translate(20%, 20%);
-  background-color: gra;
-} */
-
-/* .nonDisplayonProfile {
-    display: none;
+/* .card-list :hover {
+  border: solid 1px #707070;
 } */
 
 .card {
   list-style: none;
+  padding: 0 10px;
 }
 
 .card-list {
-  border-radius: 3px;
-  width: 100%;
   min-height: 100px;
-  border-style: double;
-  background-color: gray;
+  border: solid 1px #404040;
 }
 
 .stack {
   display: grid;
   grid-template-columns: 1fr 2fr;
   text-align: center;
-
 }
 
 .stacked {
-    text-align: center;
-    align-self: center;
+  text-align: center;
+  align-self: center;
+  color: #ffffff;
+  text-align: left;
+}
+
+.result-detail {
+  margin: 0;
+  font-size: 1.2em;
+  padding-left: 20px;
 }

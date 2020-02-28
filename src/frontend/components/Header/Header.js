@@ -8,23 +8,18 @@ export default function Header() {
   return (
     <div className="Header">
       <div className="navbar">
-        <div className="navbar-logo">
-          <Link to="/">
-            <img className="logo-img" src={logo} alt="logo" />
-          </Link>
-        </div>
-        <div className="navbar-join">
+        <Link to="/">
+          <img className="logo-img" src={logo} alt="logo" />
+        </Link>
+        <div className="navbar-buttons">
           <button className="nav-button" >
             Sign Up
           </button>
           <button className="nav-button" href="">
-          
             Log In
           </button>
         </div>
         <img className="user-icon" src={user} alt="user" />
-      </div>
-      <div className="Header-bottom">
       </div>
     </div>
   );

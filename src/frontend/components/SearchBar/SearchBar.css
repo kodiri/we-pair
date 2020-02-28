@@ -1,24 +1,45 @@
-.SearchBar {
-    display: flex;
-    flex-flow: column;
+.search-bar :focus {
+  width: 99%;
+  border: 1px solid #195280;
+  box-sizing: border-box;
 }
 
 .search-bar {
-    width: 70%;
-    height: 30px;
-    border: black 1px solid;
-    margin: 5px auto;
-    
-
+  width: 100%;
+  height: 70px;
+  margin: 1.5px;
+  background-color: #383838;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #cccccc;
+  box-sizing: border-box;
+  border: 1px solid #383838;
+  border-radius: 0;
 }
 
-.search-button{
-    background-color: #529bd8;
+.search-button {
+  background-color: #02629e;
+  border: none;
+  width: 50%;
+  margin: 10px auto;
+  height: 70px;
+  font-size: 20px;
+  color: white;
 }
-/* .stack {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-start: 2;
-    width: 70%;
-} */
 
+@media (min-width: 600px) {
+    .search-bars{
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        width: 50vw
+    }
+
+    .search-bar {
+        /* width: 50vw; */
+    }
+
+    .search-button {
+        width: 100%;
+    }
+}
