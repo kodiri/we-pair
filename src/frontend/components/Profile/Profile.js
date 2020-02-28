@@ -42,16 +42,14 @@ export default class Profile extends React.Component {
             <span>&#125;</span>
           </div>
         </div>
-
-
-          {/* <button className="send-button">Send</button> */}
-          <PickDates/>
-          <textarea placeholder="Leave a message..."/>
-          <div>
-            <a href="mailto:anitha.k.dharaneedharan@gmail.com?Subject=Hello">
-              Send email
-            </a>
-          </div>
+        {/* <button className="send-button">Send</button> */}
+        <PickDates/>
+        <textarea placeholder="Leave a message..."/>
+        <div>
+          <a href="mailto:anitha.k.dharaneedharan@gmail.com?Subject=Hello">
+            Send email
+          </a>
+        </div>
       </div>
     );
   }
