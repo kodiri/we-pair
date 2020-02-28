@@ -4,6 +4,10 @@
   padding: 10px;
 }
 
+/* .card-list :hover {
+  border: solid 1px #707070;
+} */
+
 .card {
   list-style: none;
   padding: 0 10px;

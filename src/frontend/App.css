@@ -17,10 +17,18 @@ body {
   color: #CF9176;
 }
 
+a :visited {
+  text-decoration: none;
+}
+
 @media(min-width: 600px) {
   .App{
     width: 80%;
     margin: 0 auto;
     padding: 0;
+  }
+  
+  a :visited {
+    text-decoration: none;
   }
 }
