@@ -8,13 +8,13 @@
     margin-bottom: 50px;
 }
 
-.search-title h1 {
+/* .search-title h1 {
     font-weight: 300;
     font-size: 70px;
     margin: 0;
     padding-left: 10%;
     text-align: left;
-}
+} */
 
 .search-title p {
     padding-left: 10%;
@@ -26,6 +26,7 @@
 @media (min-width: 600px) {
     .search-title p {
         padding-left: 0;
+        font-size: 1.8em ;
     }
 
     .search-title h1 {
