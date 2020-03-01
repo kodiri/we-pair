@@ -30,14 +30,19 @@ export default class Profile extends React.Component {
           />
           <div className="profile-detail">
             <span>&#123;</span>
-            <div className="user-list user-name"><span className="key">name: </span> <span className="value">	&#34;{this.state.userId.name}	&#34;</span>,</div>
-
-            <div className="user-list">
-            <span className="key">language: </span> <span className="value">	&#34;{this.state.userId.language}	&#34;</span>,
-            </div>
-
-            <div className="user-list">
-            <span className="key">location :</span> <span className="value">	&#34;{this.state.userId.location}&#34;</span>
+            <div className="json-indentation">
+              <div className="user-list user-name">
+                <span className="key">&#34;name&#34;</span>{": "}
+                <span className="value">	&#34;{this.state.userId.name}	&#34;</span>,
+              </div>
+              <div className="user-list">
+                <span className="key">&#34;language&#34;</span>{": "}
+                <span className="value">	&#34;{this.state.userId.language}	&#34;</span>,
+              </div>
+              <div className="user-list">
+                <span className="key">&#34;location&#34;</span>{": "}
+                <span className="value">	&#34;{this.state.userId.location}&#34;</span>
+              </div>
             </div>
             <span>&#125;</span>
           </div>

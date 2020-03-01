@@ -19,8 +19,7 @@
 }
 
 .stack {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   text-align: center;
 }
 
