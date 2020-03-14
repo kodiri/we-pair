@@ -11,12 +11,14 @@
   padding: 10px;
 }
 
-.nav-button{
-  text-decoration: none;
+.auth-box button{
   background-color: #1e1e1e;
-  color: white;
-  border: none;
   display: inline;
+  border: none;
+  outline: none;
+  
+  color: white;
+  text-decoration: none;
   font-size: 1.1em;
 }
 
@@ -29,10 +31,6 @@
   color: white;
 }
 
-.nav-button {
-  font-size: 1.3em;
-  padding: 0 10px;
-}
 /* Desktop */
 @media (min-width: 600px) {
   .navbar {
@@ -40,9 +38,14 @@
     width: 100%;
     margin: 0;
   }
-
+  
   .logo-img {
     width: 200px;
+  }
+
+  .auth-box button {
+    font-size: 1.3em;
+    padding: 0 10px;
   }
 
 }
