@@ -23,10 +23,14 @@ export default class SearchResults extends React.Component {
                     <span className="value">&#34;{this.props.name}&#34;</span>,
                     <br />
                     <span className="key">language: </span>
-                    <span className="value">&#34;{this.props.language}&#34;</span>
+                    <span className="value">
+                      &#34;{this.props.language}&#34;
+                    </span>
                     ,<br />
                     <span className="key">location: </span>
-                    <span className="value">&#34;{this.props.location}&#34;</span>
+                    <span className="value">
+                      &#34;{this.props.location}&#34;
+                    </span>
                     ,<br />
                     <span className="key">availability: </span>
                     <span className="value">
